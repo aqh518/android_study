@@ -1,6 +1,7 @@
 package com.android.tony.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
@@ -35,6 +36,17 @@ public class UIStudyTwoActivity extends Activity {
 		Button next=(Button) this.findViewById(R.id.next);
 		final ImageView image1=(ImageView) this.findViewById(R.id.image1);
 		final ImageView image2=(ImageView) this.findViewById(R.id.image2);
+		
+		Button nextPage=(Button) this.findViewById(R.id.next_page);
+		nextPage.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent=new Intent();
+				intent.setClass(UIStudyTwoActivity.this, UIStudyThreeActivity.class);
+				UIStudyTwoActivity.this.startActivity(intent);
+			}
+		});
 		
 		OnClickListener listener=new View.OnClickListener() {
 			@Override

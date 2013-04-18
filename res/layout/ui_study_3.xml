@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" 
+    >
+    
+    <AutoCompleteTextView 
+        android:id="@+id/auto_complete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请选择星座"
+        android:textSize="20dp"
+        />
+    <Spinner 
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        />
+    
+    <ProgressBar 
+        android:id="@+id/progress_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:max="100"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        />
+    
+    <SeekBar 
+        android:id="@+id/seek_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progress="100"
+        android:layout_marginTop="10dp"
+        android:thumb="@drawable/seek_thumb"
+        />
+    
+    <RatingBar 
+        android:id="@+id/rate_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:numStars="5"
+        android:max="255"
+        android:progress="150"
+        android:stepSize="0.5"
+        />
+</LinearLayout>
