@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:gravity="right|center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="学习TableLayout" 
+        android:layout_marginTop="5dp"
+        />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:shrinkColumns="1" 
+        android:stretchColumns="2"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#A4C639"
+            android:textColor="#443C2A"
+            android:text="这是一行，标签不被tableRow 包围， 默认是一行" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="第一列" 
+                android:textColor="#FFC333"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                />
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="第二列,收缩以填满整行" 
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#FFC333"
+                />
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="第三列，拉伸以填满整行" 
+                android:singleLine="true"
+                android:layout_marginRight="10dp"
+                android:textColor="#FFC333"
+                />
+        </TableRow>
+              
+        
+    </TableLayout>
+    
+     <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:collapseColumns="1"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="2"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#336"
+            android:text="这是一行，标签不被tableRow 包围， 默认是一行" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFC333"
+                android:text="第一列" />
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFC333"
+                android:text="第二列,收缩以填满整行" />
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFC333"
+                android:gravity="right"
+                android:text="第三列，拉伸以填满整行" />
+        </TableRow>
+        
+            <Button 
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:text="回主页面"
+				android:layout_gravity="right"
+                />
+    </TableLayout>
+<!--     霓虹灯效果 -->
+     <FrameLayout 
+         android:id="@+id/frame"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         >
+         <TextView
+             	android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ff0000"
+                android:width="210dp"
+                android:height="50dp"
+                 />
+        <TextView
+            	android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#dd0000"
+                android:width="180dp"
+                android:height="50dp"
+                 />
+        <TextView
+            	android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#bb0000"
+                android:width="150dp"
+                android:height="50dp"
+                 />
+        <TextView
+            	android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#990000"
+                android:width="120dp"
+                android:height="50dp"
+                 />
+        <TextView
+            	android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#770000"
+                android:width="90dp"
+                android:height="50dp"
+                 />
+        <TextView
+            	android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#550000"
+                android:width="60dp"
+                android:height="50dp"
+                 />
+        <TextView
+            	android:id="@+id/tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#330000"
+                android:width="30dp"
+                android:height="50dp"
+                 />
+     </FrameLayout>
+     
+		<TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#17507C"
+                android:gravity="left"
+                android:text="相对布局的练习  梅花布局"
+                android:layout_marginTop="10dp"
+                 />
+		
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+	    <Button
+	        	android:id="@+id/r_tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1" 
+                android:textSize="15dp"
+                android:textColor="#4C402A"
+                android:layout_centerInParent="true"
+                />
+	     <Button
+	         	android:id="@+id/r_tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2" 
+                android:textSize="15dp"
+                android:textColor="#4C402A"
+                android:layout_above="@id/r_tv_1"
+                android:layout_alignLeft="@id/r_tv_1"
+                
+                />
+	      <Button
+	         	android:id="@+id/r_tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3" 
+                android:textSize="15dp"
+                android:textColor="#4C402A"
+                android:layout_toLeftOf="@id/r_tv_1"
+                android:layout_alignTop="@id/r_tv_1"
+                />
+	       <Button
+	           android:id="@+id/r_tv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4" 
+                android:textSize="15dp"
+                android:textColor="#4C402A"
+                android:layout_below="@id/r_tv_1"
+                android:layout_alignLeft="@id/r_tv_1"
+                />
+	        <Button
+	            android:id="@+id/r_tv_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5" 
+                android:textSize="15dp"
+                android:textColor="#4C402A"
+                android:layout_toRightOf="@id/r_tv_1"
+                android:layout_alignTop="@id/r_tv_1"
+                />
+	</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" 
+    >
+
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        >
+        <Button 
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="增大透明度"
+            android:textColor="#232323"
+            />
+        <Button 
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="降低透明度"
+            android:textColor="#232323"
+            />
+        <Button 
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一张"
+            android:textColor="#232323"
+            />
+    </LinearLayout>
+    
+    <ImageView 
+        	android:id="@+id/image1"
+        	android:layout_width="fill_parent"
+        	android:layout_height="300dp"
+        	android:background="#000"
+        	android:scaleType="fitCenter"
+        	android:src="@drawable/mm1"
+        />
+    <ImageView 
+        	android:id="@+id/image2"
+        	android:layout_width="120dp"
+        	android:layout_height="120dp"
+        	android:background="#00f"
+        	android:layout_marginTop="10dp"
+        />
+</LinearLayout>

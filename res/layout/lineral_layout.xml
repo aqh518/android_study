@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="right|center_horizontal"
+     >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dail" />
+	
+    <EditText 
+        android:id="@+id/telphone"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:phoneNumber="true"
+        />
+    
+    <Button 
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拨号"
+        />
+    
+    <EditText 
+        android:id="@+id/sms"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:textStyle="normal"
+        />
+     <Button 
+        android:id="@+id/send_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送短信"
+        />
+</LinearLayout>
