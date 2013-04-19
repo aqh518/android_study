@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/tab_demo_content_1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbarStyle="insideOverlay" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mm1" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mm2" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mm3" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mm4" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mm5" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mm6" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        	android:id="@+id/tab_demo_content_2"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical" >
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/star" 
+            android:divider="@color/greenyellow"
+            android:dividerHeight="2dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_demo_content_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="这个是第三个选项卡下的内容." />
+    </LinearLayout>
+
+</TabHost>

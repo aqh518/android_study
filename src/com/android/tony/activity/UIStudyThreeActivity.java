@@ -1,6 +1,7 @@
 package com.android.tony.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -12,6 +13,7 @@ import android.view.ViewGroup.MarginLayoutParams;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
@@ -151,6 +153,19 @@ public class UIStudyThreeActivity extends Activity {
 				}
 			}
 		}).start();
+		
+		//跳转到下一页
+		Button next_page=(Button) this.findViewById(R.id.to_four);
+		next_page.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent=new Intent();
+				intent.setClass(UIStudyThreeActivity.this, UIStudyFourActivity.class);
+				UIStudyThreeActivity.this.startActivity(intent);
+			}
+		});
+		
 		
 	}
 

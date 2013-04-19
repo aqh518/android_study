@@ -24,6 +24,7 @@
         <activity android:name=".UIStudyOneActivity" android:label="Android组件学习之一"></activity>
         <activity android:name=".UIStudyTwoActivity" android:label="Android组件学习之二"></activity>
    		<activity android:name=".UIStudyThreeActivity" android:label="Android组件学习之三"></activity>
+   		<activity android:name=".UIStudyFourActivity" android:label="Android组件学习之四"></activity>
         </application>
 
 </manifest>
