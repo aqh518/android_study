@@ -2,7 +2,7 @@
 <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/tab"
     android:orientation="vertical" >
 
     <HorizontalScrollView
@@ -68,12 +68,27 @@
         	android:orientation="vertical" >
 
         <ListView
+            android:id="@+id/list_view_simple_adapter"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/star" 
-            android:divider="@color/greenyellow"
-            android:dividerHeight="2dp"
+            android:divider="#1D697C"
+            android:dividerHeight="1dp"
             />
+        
+<!--          <TextView -->
+<!--             android:id="@+id/star_name" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_gravity="center_vertical" -->
+<!--             android:paddingLeft="10dp"/> -->
+         
+<!--          <ImageView  -->
+<!--              android:id="@+id/star_icon" -->
+<!--              android:layout_width="30dp" -->
+<!--              android:layout_height="30dp" -->
+<!--              android:paddingLeft="10dp" -->
+<!--              /> -->
+        
     </LinearLayout>
 
     <LinearLayout
@@ -82,11 +97,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" 
         >
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="这个是第三个选项卡下的内容." />
+		<ExpandableListView 
+		    android:id="@+id/expand_listview"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:drawSelectorOnTop="false"
+		  />
+        
     </LinearLayout>
 
 </TabHost>
